@@ -129,6 +129,6 @@ print("maksimum: ", maksimum(ratings))
 # histogram(ratings)
 print("aykiri degerler: ", aykiriDegerler(ratings))
 """
-print("%95 için güven araligi: ",güvenAraligi(ratings[0:50:5]))
+print("%95 için güven araligi: ",güvenAraligi(ratings[0:70:2]))
 
 

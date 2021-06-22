@@ -61,7 +61,7 @@ def dagiliminSekli(liste):
 
 
 def histogram(liste):
-    plt.hist(liste, bins=120,
+    plt.hist(liste, bins=7,
              color="bisque", label="Ratings", histtype="step", orientation="vertical")
     plt.xlabel("Oranlar")
     plt.ylabel("Dağılımlar")
@@ -111,7 +111,7 @@ def güvenAraligi(liste):
 
 # print(ratings)
 print("ortalama:",ortalamaHesapla(ratings))
-"""
+
 print("medyan:",medyan(ratings))
 
 print("varyans:",varyans(ratings))
@@ -126,9 +126,9 @@ print("iqr ", Iqr(ratings))
 
 print("minimum: ", minimum(ratings))
 print("maksimum: ", maksimum(ratings))
-# histogram(ratings)
 print("aykiri degerler: ", aykiriDegerler(ratings))
-"""
-print("%95 için güven araligi: ",güvenAraligi(ratings[0:70:2]))
+histogram(ratings)
+
+print("%95 için güven araligi: ",güvenAraligi(ratings[0:50:2]))
 
 
